@@ -40,7 +40,6 @@ export default function Home() {
     const activeWalletAddress = accounts[0]
     localStorage.setItem('walletaddress', activeWalletAddress)
     setWalletAddress(activeWalletAddress)
-    
       
     }else{
       console.log('Metamask not detected')
@@ -53,20 +52,23 @@ export default function Home() {
     const connectionStatus = localStorage.getItem('isconnected')
     if (connectionStatus === 'true'){
       setIsWalletConnected(true)
+      if (typeof window !== 'undefined'){
       setWalletAddress(localStorage.getItem('walletaddress'))
+      }
     }
   }, [])
 
   useEffect(()=>{
     contractAddressExists(setIsTokenContract)
+    if (typeof window !== 'undefined'){
     const contractpresent: any = setContractAddress(localStorage.getItem('tokencontract'))
     if(contractpresent !== 'undefined' && contractpresent !== null){
       setIsTokenContract(true)
     }
+    }
   }, [isTokenContract, setIsTokenContract])
 
   // Disconnect Function
-
   const disconnect = async ()=>{
     if(typeof window !== 'undefined' && typeof window.ethereum !== 'undefined'){
       setWeb3(null)
@@ -74,25 +76,24 @@ export default function Home() {
       setIsWalletConnected(false)
       localStorage.removeItem('walletaddress')
       localStorage.removeItem('isconnected')
-
     }
   }
   
   // Remove Contract Function
   const removeContract = ()=>{
+    if (typeof window !== 'undefined'){
     localStorage.removeItem('tokencontract')
     localStorage.removeItem('istokencontract')
     setContractAddress(null)
     setIsTokenContract(false)
+    }
 
   }
 
   
 
-  
-
   return (
-  <div>
+  <div className="overflow-hidden">
     {/* Header */}
     <div className="flex justify-between py-4 px-2 
     bg-gradient-to-bl from-gray-500 via-gray-800 to-black/80 text-white shadow-2xl">
@@ -110,8 +111,9 @@ export default function Home() {
         </Button>
      }
     </div>
-
-    <div className="container grid md:grid-cols-3 gap-3 pt-3 ">
+    
+    
+    <div className="grid grid-row-flow md:grid-cols-3 gap-3 pt-3 px-2 ">
       {/* Left side */}
       <div className="flex flex-col gap-8   px-2 py-2 shadow-2xl">
       <div>

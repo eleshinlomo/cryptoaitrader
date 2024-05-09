@@ -8,6 +8,7 @@ import {
 
 export const AlertMessage =()=> {
   return (
+    <div>
     <Alert className="bg-black text-white mt-3">
       <Terminal className="h-4 w-4" />
       <AlertTitle className="text-red-500 font-extrabold">IMPORTANT!</AlertTitle>
@@ -16,5 +17,6 @@ export const AlertMessage =()=> {
         You may lose all your money.
       </AlertDescription>
     </Alert>
+    </div>
   )
 }
