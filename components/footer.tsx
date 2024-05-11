@@ -17,9 +17,11 @@ const Footer = ()=>{
           <div className="sm:col-span-12 lg:col-span-3">
 
             {/* Logo */}
+            <a href='https://myafros.com'>
             <div className="relative h-24 w-32 mb-2">
               <Image src='/logo.png' alt='logo' fill />
             </div>
+            </a>
             <div className="text-sm text-gray-600">
               <a href="terms" className="text-gray-600 hover:text-gray-900 
               hover:underline transition duration-150 ease-in-out">Terms</a> · 

@@ -79,6 +79,7 @@ import {
 
    
     return (
+      <div>
       <AlertDialog>
         <AlertDialogTrigger asChild>
         
@@ -106,9 +107,10 @@ import {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <AlertDialogCancel className='bg-black '>Cancel</AlertDialogCancel>
             <AlertDialogAction>
-            {isTokenContract === true? <Button
+            {isTokenContract === true? 
+            <Button
             onClick={(e)=>changeTokenContract(e)}
             >Submit</Button> : <Button
             onClick={(e)=>addTokenContract(e)}
@@ -118,6 +120,7 @@ import {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+      </div>
     )
   }
 
