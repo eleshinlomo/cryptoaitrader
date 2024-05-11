@@ -50,7 +50,7 @@ const HandleEmailWaitlist = async (e:any)=>{
   <p className='  py-2 text-muted-foreground '>Thanks for checking this project out. 
   Please join my waitlist to stay informed about my project.</p>
             <p className='text-blue-500  '>{message}</p>
-        <form className=' md:flex gap-3' onSubmit={HandleEmailWaitlist}>
+        <form className=' flex flex-col ' onSubmit={HandleEmailWaitlist}>
           <input 
           className='border border-black px-1 text-center'
           value={email}
@@ -58,8 +58,9 @@ const HandleEmailWaitlist = async (e:any)=>{
           placeholder='Enter your email'
           onChange={(e)=>setEmail(e.target.value)}
           type='email'
+          autoComplete='none'
            required /><br/>
-           <Button type='submit' className=' bg-blue-500 mt-2 md:m-0 ' variant='default'>
+           <Button type='submit' className=' bg-blue-500 hover:bg-blue-500 mt-2 md:m-0 ' variant='default'>
             Submit</Button>
         </form>
       </div>
