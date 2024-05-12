@@ -18,7 +18,7 @@ const Footer = ()=>{
 
             {/* Logo */}
             <a href='https://myafros.com'>
-            <div className="relative h-24 w-32 mb-2">
+            <div className="relative h-10 w-32 mb-2">
               <Image src='/logo.png' alt='logo' fill />
             </div>
             </a>
@@ -32,14 +32,14 @@ const Footer = ()=>{
 
           {/* 2nd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
+            <h6 className="text-gray-800 font-medium mb-2">Projects</h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link href="https://fixupe.com" className="text-gray-600 hover:text-gray-900 
                 transition duration-150 ease-in-out">CRM</Link>
               </li>
               <li className="mb-2">
-                <Link href="https://myafros.com" className="text-gray-600 hover:text-gray-900 
+                <Link href="https://cryptoaitrader.vercel.app" className="text-gray-600 hover:text-gray-900 
                 transition duration-150 ease-in-out">Crypto AI Trader</Link>
               </li>
               <li className="mb-2">
@@ -47,11 +47,11 @@ const Footer = ()=>{
                 transition duration-150 ease-in-out">Image Generator</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 
+                <a href="https://fixupe.com" className="text-gray-600 hover:text-gray-900 
                 transition duration-150 ease-in-out">Transcriber</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 
+                <a href="https://fixupe.com" className="text-gray-600 hover:text-gray-900 
                 transition duration-150 ease-in-out">Mass Mailer</a>
               </li>
             </ul>
@@ -66,16 +66,20 @@ const Footer = ()=>{
                 transition duration-150 ease-in-out">Documentation</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Tutorials & Guides</a>
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                  Tutorials & Guides</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</a>
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                  Blog</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</a>
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                  Support Center</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Partners</a>
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                  Partners</a>
               </li>
             </ul>
           </div>
@@ -90,13 +94,16 @@ const Footer = ()=>{
               </li>
               </Link>
               <li className="mb-2">
-                <a href="/aboutpage" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">About us</a>
+                <a href="/aboutpage" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                  About</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Company values</a>
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                  Company values</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
+                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                  Pricing</a>
               </li>
               <li className="mb-2">
                 <Link href="/privacy" className="text-gray-600 hover:text-gray-900 
